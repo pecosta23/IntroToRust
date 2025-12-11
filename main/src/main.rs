@@ -24,7 +24,33 @@ async fn main() -> Result<(), Box<dyn std::error::Error>>{
 {}, {}, {}, {}, {}", a, b, c, d, e);
 
     //control flow
-    
+    let mut number0 = 7;
+    println!("Num0 = {}\n", number0);
+
+    number0 = 1;
+    println!("Num0 now equals to = {}\n", number0);
+
+    let number1 = 12;
+    println!("Num1 value is = {}\n", number1);
+
+    //condition 0 
+    if number0 < 10 {
+        println!("Small Number!\n");
+    } else {
+        println!("Big Numbaa!\n");
+    }
+
+    //condition 1
+    if number1 < 10 {
+        println!("Small Number!\n")
+    } else {
+        println!("Big Numbaaaaa!\n")
+    }
+
+    //lil loop
+    for idx in 0..8{
+        println!("i = {}\n", idx);
+    }
 
     Ok(())
 }
