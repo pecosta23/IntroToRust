@@ -52,5 +52,22 @@ async fn main() -> Result<(), Box<dyn std::error::Error>>{
         println!("i = {}\n", idx);
     }
 
+    //using r#""#
+    let poem = 
+    r#"Hmmmm,
+    paragraph, that's cool,
+    that's nice,
+    xoxo"#;
+
+    println!("{}\n", poem);
+
+    //call with reqwest
+    let response = reqwest::get("https://www.google.com")
+        .await?
+        .text()
+        .await?;
+
+    println!("Response = {}", response);
+
     Ok(())
 }
